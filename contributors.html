@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculator — Contributors</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #1a1e26;
+    --accent: #4caf50;
+    --text: #f5f5f5;
+    --muted: #9aa0ab;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  header {
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+  header h1 { margin: 0 0 8px; font-size: 2rem; }
+  header p { color: var(--muted); margin: 4px 0; }
+  header a { color: var(--accent); text-decoration: none; }
+  header a:hover { text-decoration: underline; }
+  .instructions {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 16px 20px;
+    background: #161a22;
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+  }
+  .instructions code {
+    background: #000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  main {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+  }
+  #contributors-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    gap: 12px;
+  }
+  .contributor-card {
+    background: var(--card);
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .contributor-card .name {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .contributor-card .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    padding-bottom: 40px;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Calculator Contributors</h1>
+  <p>Students of Git &amp; GitHub — add your name to this page.</p>
+  <p><a href="index.html">← Back to Calculator</a></p>
+</header>
+
+<div class="instructions">
+  <strong>Assignment — add your name with Git:</strong>
+  <ol>
+    <li>Clone the repo: <code>git clone https://github.com/garba-the-analyst/Calculator.git</code></li>
+    <li>Create a branch: <code>git checkout -b add/your-full-name</code></li>
+    <li>Copy the <code>&lt;li&gt;</code> template below, paste it in the list, fill in your name.</li>
+    <li>Commit &amp; push: <code>git add contributors.html</code>, <code>git commit -m "Add Your Name to contributors"</code>, <code>git push -u origin add/your-full-name</code></li>
+    <li>Open a Pull Request on GitHub for review.</li>
+  </ol>
+</div>
+
+<main>
+  <ul id="contributors-list">
+    <!--
+      STUDENTS: copy the template below, uncomment it, and fill in your details.
+      Do NOT edit other people's entries — this keeps merge conflicts small.
+
+      TEMPLATE:
+      <li class="contributor-card">
+        <span class="name">Your Full Name</span>
+        <span class="meta">GitHub: @your-username | Favorite feature: + - * /</span>
+      </li>
+    -->
+
+    <!-- Example entry (teacher). Students add BELOW this line. -->
+    <li class="contributor-card">
+      <span class="name">Garba (Teacher)</span>
+      <span class="meta">GitHub: @garba-the-analyst | Course: Git &amp; GitHub</span>
+    </li>
+
+    <!-- STUDENTS: paste your <li> entries below this line. One <li> per student. -->
+
+  </ul>
+</main>
+
+<footer>
+  Total contributors: edit this page to add yourself. Happy committing!
+</footer>
+
+</body>
+</html>
